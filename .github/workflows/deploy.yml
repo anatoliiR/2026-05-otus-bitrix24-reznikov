@@ -4,7 +4,11 @@ on:
   push:
     branches:
       - main
-
+    # Срабатывает при открытии или обновлении коммитов в Merge Request, который направлен В ветку main
+  pull_request:
+    branches:
+        - main
+    types: [ opened, synchronize, reopened ]
 jobs:
   deploy:
     runs-on: ubuntu-latest
