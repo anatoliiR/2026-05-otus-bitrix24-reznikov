@@ -5,7 +5,7 @@ $p = new \Local\App\ExceptionHandler();
 ?>
 <ul class="list-group">
     <li class="list-group-item">
-        <a href="/local/logs/exceptions.log">Файл лога</a>
+        <a href="/local/logs/writeExceptions.txt">Файл лога</a>
     </li>
 </ul>
 <?php

@@ -10,7 +10,7 @@ return ['exception_handling' => [
         'log' => [
             'class_name' => 'Local\\App\\ExceptionHandler',
             'settings' => array(
-                'file' => '/local/logs/writeExeptions.txt',
+                'file' => '/local/logs/writeExceptions.txt',
                 'log_size' => 1000000,
             ),
         ],
@@ -22,7 +22,7 @@ return ['exception_handling' => [
             'app.logger' => [
                 'className' => '\\Bitrix\\Main\\Diag\\FileLogger',
                 'constructorParams' => [
-                    $_SERVER['DOCUMENT_ROOT'] .  '/local/logs/writelog.txt',
+                    $_SERVER['DOCUMENT_ROOT'] .  '/local/logs/writeLog.txt',
                     1048576, // 1 Мб
                 ],
                 'level' => \Psr\Log\LogLevel::DEBUG,
